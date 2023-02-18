@@ -29,7 +29,6 @@ print("le maximum est:",tuple[1], "qui correspond à l'elfe",tuple[0])
 
 ### PART 2
 # the total calories carried by the top three Elves carrying the most calories
-
 sorted_list=[(i,x) for i, x in sorted(enumerate(liste_sommes), key=lambda x: x[1],reverse=True)]
 top3=[sorted_list[i] for i in range(3)]
 sommes=[top3[i][1] for i in range(len(top3))]
