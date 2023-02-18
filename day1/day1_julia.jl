@@ -14,5 +14,3 @@ calories= map(x->map(y->parse(Int, y), x), calories)   # convert each element to
 liste_sommes=map(y->sum(y),calories)
 maximum=reduce(max, liste_sommes)   # reduce car liste_sommes est vector
 println(maximum)
-
-
