@@ -6,7 +6,6 @@ the first column is what your opponent is going to play:
 A for Rock, B for Paper, and C for Scissors
 The second column is what you should play in response (not sure)
 X for Rock, Y for Paper, and Z for Scissors
-
 The score for a single round is the score for the shape you selected 
 (1 for Rock, 2 for Paper, and 3 for Scissors) 
 plus the score for the outcome of the round
