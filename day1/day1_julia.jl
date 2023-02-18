@@ -9,8 +9,10 @@ n'est pas vide avant de l'utiliser pour autre chose
 (par exemple la conversion en entier avec parse(Int, y))
 """
 calories= map(x->filter(y->!isempty(y),x),calories) 
-calories= map(x->map(y->parse(Int, y), x), calories) # convert each element to integer
-# OU BIEN : calories=[parse.(Int, liste) for liste in calories]
+calories= map(x->map(y->parse(Int, y), x), calories)   # convert each element to integer
+# ou bien : calories=[parse.(Int, liste) for liste in calories]
 liste_sommes=map(y->sum(y),calories)
-maximum=reduce(max, liste_sommes) # reduce car liste_sommes est vector
-maximum
+maximum=reduce(max, liste_sommes)   # reduce car liste_sommes est vector
+println(maximum)
+
+
